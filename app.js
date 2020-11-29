@@ -12,7 +12,6 @@ searchMovie.addEventListener('keyup',(e) =>{
         
         movie.getMovies(userInput)
         .then(data => {
-            console.log(data.movie)
             if(data.movie.Error === 'Movie not found!'){
                 //If it shows an error
                 ui.showAlert('Movie Not Found','alert alert-warning');
