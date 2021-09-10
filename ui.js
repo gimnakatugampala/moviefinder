@@ -3,7 +3,7 @@ class UI{
         this.profile = document.getElementById('movies');
     }
     
-    //Diaplay movies in UI
+    // Display movies in UI
     showMovie(movie){
         this.profile.innerHTML = `
         <div class="row">
@@ -95,28 +95,28 @@ class UI{
         `;
     }
 
-    //Show alert messages
+    // Show alert messages
     showAlert(message,classname){
-        //clear any remaining alerts
+        // Clear any remaining alerts
         this.clearAlert()
 
-        //Create a div
+        // Create a div element
         const div = document.createElement('div');
-        //Add Class
+        // Add Class
         div.className = classname;
-        //append text nod 
+        // Append text node 
         div.appendChild(document.createTextNode(message));
 
-        //search container
+        // Search container
         const searchContainer = document.querySelector('.searchContainer');
 
-        //jumbotron
+        // Jumbotron
         const jumbotron = document.querySelector('.jumbotron');
 
-        //insert the alert
+        // Insert the alert
         searchContainer.insertBefore(div,jumbotron);
 
-        //set timeout
+        // Set timeout
         setTimeout(() => {
             this.clearAlert();
           }, 2000);
@@ -131,7 +131,7 @@ class UI{
         }
       }
 
-    //claer input feilds
+    // Clear input feilds
     clearAll(){
         this.profile.innerHTML = '';
     }

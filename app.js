@@ -1,9 +1,9 @@
-//Init Movies
+// Init Movies
 const movie = new Movies;
-//Init UI
+// Init UI
 const ui = new UI;
 
-//search input
+// Search input
 const searchMovie = document.getElementById('searchMovies');
 
 searchMovie.addEventListener('keyup',(e) =>{
@@ -13,16 +13,16 @@ searchMovie.addEventListener('keyup',(e) =>{
         movie.getMovies(userInput)
         .then(data => {
             if(data.movie.Error === 'Movie not found!'){
-                //If it shows an error
+                // If it shows an error
                 ui.showAlert('Movie Not Found','alert alert-warning');
             }else{
-                //show movies
+                // Show movies
                 ui.showMovie(data.movie);
             }
         })
 
         }else{
-            //Claer Fleid
+            // Clear Field
             ui.clearAll();
         }
     })
