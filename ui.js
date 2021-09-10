@@ -22,8 +22,8 @@ class UI{
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-success">Runtime : ${movie.Runtime}</li>
                   <li class="list-group-item text-warning">Country : ${movie.Country}</li>
-                  <li class="list-group-item text-danger">Rated : ${movie.Rated}3</li>
-                  <li class="list-group-item text-info">Production Company : ${movie.Production}3</li>
+                  <li class="list-group-item text-danger">Rated : ${movie.Rated}</li>
+                  <li class="list-group-item text-info">Production Company : ${movie.Production}</li>
                 </ul>
                 <div class="card-footer text-primary">
                   Director/s : ${movie.Director}
